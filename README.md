@@ -1,6 +1,6 @@
 # Roomdle
 
-Roomdle is a mobile application designed to help people find compatible roommates. The app allows users to create a profile and search for potential roommates based on a variety of criteria, including location, lifestyle, and budget.
+Roomdle is a mobile application designed to help people find compatible roommates. The app allows users to create a profile and search for potential roommates based on a variety of criteria, including location, lifestyle, and budget. This repository contains the Django backend code for Roomdle.
 
 ## Features
 
@@ -17,9 +17,10 @@ Some of the features of Roomdle include:
 
 Roomdle is built using a combination of technologies, including:
 
+- Django for the backend
+- Django REST framework for the API
+- PostgreSQL for the database
 - React Native for the frontend
-- Firebase for the backend and database
-- Redux for state management
 - Expo for building and deploying the app
 
 ## Getting Started
@@ -27,9 +28,10 @@ Roomdle is built using a combination of technologies, including:
 To get started with Roomdle, follow these steps:
 
 1. Clone this repository to your local machine.
-2. Install the required dependencies by running `npm install`.
-3. Create a Firebase project and add your Firebase credentials to the appropriate files.
-4. Start the app by running `npm start` or `expo start`.
+2. Install the required dependencies by running `pip install -r requirements.txt`.
+3. Create a PostgreSQL database and add your database credentials to the `settings.py` file.
+4. Run the database migrations by running `python manage.py migrate`.
+5. Start the development server by running `python manage.py runserver`.
 
 ## Contributing
 
